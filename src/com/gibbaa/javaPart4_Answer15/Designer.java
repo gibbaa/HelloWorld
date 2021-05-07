@@ -1,11 +1,10 @@
 package com.gibbaa.javaPart4_Answer15;
 
 public class Designer extends Employee {
-	public String position;
 
 	public Designer(String firstnameInput, String lastnameInput) {
 		super(firstnameInput, lastnameInput);
-		this.position = "Designer";
+		this.setPosition("Designer");
 	}
 
 	@Override
@@ -15,7 +14,7 @@ public class Designer extends Employee {
 	
 	@Override
 	public void info() {
-		System.out.println(this.firstname + " " + this.lastname + " : " + this.position);
+		System.out.println(this.firstname + " " + this.lastname + " : " + this.getPosition());
 	}
 	
 	public void graphicDesign() {

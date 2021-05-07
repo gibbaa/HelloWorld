@@ -4,7 +4,7 @@ final public class WebProgrammer extends WebDesigner {
 
 	public WebProgrammer(String firstnameInput, String lastnameInput) {
 		super(firstnameInput, lastnameInput);
-		this.position = "Web Programmer";
+		this.setPosition("Web Programmer");
 	}
 
 	public void writeJava() {

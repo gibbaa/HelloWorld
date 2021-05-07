@@ -4,7 +4,7 @@ public class WebDesigner extends Designer {
 
 	public WebDesigner(String firstnameInput, String lastnameInput) {
 		super(firstnameInput, lastnameInput);
-		this.position = "Web Design";
+		this.setPosition("Web Designer");
 	}
 	
 	public void webDesign() {

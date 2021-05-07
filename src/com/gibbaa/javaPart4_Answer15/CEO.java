@@ -1,10 +1,10 @@
 package com.gibbaa.javaPart4_Answer15;
 
 final public class CEO extends Employee {
-	final public String position = "CEO";
 	
 	public CEO(String firstnameInput, String lastnameInput) {
 		super(firstnameInput, lastnameInput);
+		this.setPosition("CEO");
 		this.setEmploymentType(EmploymentType.PERMANANT);
 	}
 
@@ -16,11 +16,7 @@ final public class CEO extends Employee {
 	@Override
 	public void info() {
 		System.out.println(this.firstname + " " + this.lastname + 
-				" is " + this.position + " of this company.");
-	}
-	
-	public void getPosition() {
-		System.out.println(position);
+				" is " + this.getPosition() + " of this company.");
 	}
 	
 	final public void paySalary(Employee em) {
