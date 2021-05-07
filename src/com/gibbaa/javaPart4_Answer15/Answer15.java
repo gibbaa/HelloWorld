@@ -13,7 +13,6 @@ public class Answer15 {
 			CEO ceo = new CEO("Boss", "Superbossy");
 			ceo.info();
 			ceo.setPosition("jjjjj");
-			ceo.info();
 			ceo.work();
 			
 			Designer staff1 = new Designer("Desi", "Signer");
