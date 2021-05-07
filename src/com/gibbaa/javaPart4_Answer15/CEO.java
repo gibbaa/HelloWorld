@@ -7,10 +7,21 @@ final public class CEO extends Employee {
 		this.setPosition("CEO");
 		this.setEmploymentType(EmploymentType.PERMANANT);
 	}
-
+	
 	@Override
 	public void work() {
 		System.out.println("CEO work 2 days a week!!");
+	}
+	
+	@Override
+	public void setPosition(String positionInput) {
+		// make this method can not change input if it already set.
+		
+		if (this.getPosition() != null) {
+			System.out.println("Position is alredy set to \"" + this.getPosition() + "\"" );
+			return;
+		}
+		super.setPosition(positionInput);
 	}
 	
 	@Override

@@ -13,10 +13,14 @@ public class Answer15 {
 			CEO ceo = new CEO("Boss", "Superbossy");
 			ceo.info();
 			ceo.setPosition("jjjjj");
+			ceo.info();
 			ceo.work();
+			
 			
 			Designer staff1 = new Designer("Desi", "Signer");
 			staff1.setEmploymentType(EmploymentType.PERMANANT);
+			staff1.info();
+			staff1.setPosition("Printing Designer");
 			staff1.info();
 			staff1.work();
 			staff1.graphicDesign();

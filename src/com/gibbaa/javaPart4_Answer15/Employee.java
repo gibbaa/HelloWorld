@@ -22,10 +22,6 @@ public abstract class Employee {
 	public abstract void info();
 	
 	public void setPosition(String positionInput) {
-		if (position != null) {
-			System.out.println("Position is alredy set to \"" + this.position + "\"" );
-			return;
-		}
 		this.position = positionInput;
 	}
 	
